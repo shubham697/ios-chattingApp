@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Uv-Mb-VbM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="Z0v-mX-kq9">
+            <objects>
+                <viewController id="9Uv-Mb-VbM" customClass="InitialViewController" customModule="ModProd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0tq-cf-FbC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-dB-FBp">
+                                <rect key="frame" x="55" y="273" width="304" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNq-SS-gAc">
+                                        <rect key="frame" x="92" y="203" width="120" height="40"/>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="09w-tw-io0"/>
+                                            <constraint firstAttribute="height" constant="40" id="xMH-lA-nNr"/>
+                                        </constraints>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="goRegister:" destination="9Uv-Mb-VbM" eventType="touchUpInside" id="wM0-yX-wkW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYE-zf-bON">
+                                        <rect key="frame" x="92" y="266" width="120" height="40"/>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Rfh-Gv-Qg5"/>
+                                            <constraint firstAttribute="height" constant="40" id="ZZq-BN-mTb"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="goLogin:" destination="9Uv-Mb-VbM" eventType="touchUpInside" id="ngs-nL-fSr"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="T3a-W0-j99">
+                                        <rect key="frame" x="92" y="57" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="7fu-v6-TNg"/>
+                                            <constraint firstAttribute="width" constant="120" id="qer-HU-cia"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ModProd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0i-po-9RK">
+                                        <rect key="frame" x="113" y="25" width="78.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EYE-zf-bON" secondAttribute="bottom" constant="44" id="0jV-ze-H2t"/>
+                                    <constraint firstItem="Z0i-po-9RK" firstAttribute="centerX" secondItem="d8m-dB-FBp" secondAttribute="centerX" id="3eK-3P-2nJ"/>
+                                    <constraint firstItem="EYE-zf-bON" firstAttribute="top" secondItem="LNq-SS-gAc" secondAttribute="bottom" constant="23" id="4Pv-qm-xEA"/>
+                                    <constraint firstItem="LNq-SS-gAc" firstAttribute="centerX" secondItem="d8m-dB-FBp" secondAttribute="centerX" id="OfU-Lp-Qbk"/>
+                                    <constraint firstItem="Z0i-po-9RK" firstAttribute="top" secondItem="d8m-dB-FBp" secondAttribute="top" constant="25" id="QIA-ga-aeM"/>
+                                    <constraint firstItem="EYE-zf-bON" firstAttribute="centerX" secondItem="d8m-dB-FBp" secondAttribute="centerX" id="W87-Tg-8qa"/>
+                                    <constraint firstAttribute="height" constant="350" id="YuQ-E6-N3Z"/>
+                                    <constraint firstItem="T3a-W0-j99" firstAttribute="centerX" secondItem="d8m-dB-FBp" secondAttribute="centerX" id="a9X-52-Qd5"/>
+                                    <constraint firstItem="T3a-W0-j99" firstAttribute="top" secondItem="Z0i-po-9RK" secondAttribute="bottom" constant="9" id="jLk-Qo-kTF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d8m-dB-FBp" firstAttribute="centerY" secondItem="0tq-cf-FbC" secondAttribute="centerY" id="KIB-X1-IgC"/>
+                            <constraint firstItem="UYA-bb-eyZ" firstAttribute="trailing" secondItem="d8m-dB-FBp" secondAttribute="trailing" constant="55" id="MMd-Yc-mhk"/>
+                            <constraint firstItem="d8m-dB-FBp" firstAttribute="centerX" secondItem="0tq-cf-FbC" secondAttribute="centerX" id="gDj-Gd-C1J"/>
+                            <constraint firstItem="d8m-dB-FBp" firstAttribute="leading" secondItem="UYA-bb-eyZ" secondAttribute="leading" constant="55" id="oeU-y8-BPQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UYA-bb-eyZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="login_button" destination="EYE-zf-bON" id="9QE-62-O7M"/>
+                        <outlet property="register_button" destination="LNq-SS-gAc" id="tjU-z7-v6o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTS-i8-PgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610.14492753623188" y="427.23214285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo1" width="379" height="270.5"/>
+    </resources>
+</document>
